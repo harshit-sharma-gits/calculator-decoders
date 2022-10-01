@@ -16,7 +16,7 @@
  </p>
 
 <p align="center">
-Do star the Decoder's College Notes repository ✨✨✨
+Do star the Decoder's repository ✨✨✨
 </p>
 
 <br>
@@ -28,7 +28,7 @@ Do star the Decoder's College Notes repository ✨✨✨
 
 A simple Calculator application made using HTML, CSS, JavaScript.
 
-Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by:
+Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by: [Harshit Sharma](https://github.com/harshit-sharma-gits) and [Barmendu Chakraborty](https://github.com/BarmenduC)
 
 ## How to Contribute?
 
