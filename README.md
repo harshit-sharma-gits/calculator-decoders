@@ -26,7 +26,7 @@ Do star the Decoder's repository ✨✨✨
 
 # Calculator Application
 
-A simple Calculator application made using HTML, CSS, JavaScript.
+A simple Calculator application made using HTML, CSS, JavaScript. And it is hosted at [bit.ly/DecodersCalculator](https://bit.ly/DecodersCalculator)
 
 Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by: [Harshit Sharma](https://github.com/harshit-sharma-gits) and [Barmendu Chakraborty](https://github.com/BarmenduC)
 
