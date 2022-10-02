@@ -44,7 +44,7 @@ transform: scale(1.05);
   width: 291px;
   font-size: 20px;
     margin: 0;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 10px;
     border: 2px solid black;
     border-radius: 5px;
   box-shadow: 7px 5px 15px rgba(153, 63, 63, 0.3), -7px -5px 15px rgba(35, 40, 202, 0.3);
