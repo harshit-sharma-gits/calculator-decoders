@@ -21,7 +21,11 @@ Array.from(buttons).forEach((button) => {
 		}
 		console.log(string)
 		if (e.target.innerHTML == '=') {
-			string = eval(string);
+			try {
+				string = eval(string);
+			} catch {
+				string = "Error";
+			}
 			input.value = string;
 		} else if (e.target.innerHTML == 'C') {
 			string = '';
