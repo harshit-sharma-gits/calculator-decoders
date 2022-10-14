@@ -1,5 +1,6 @@
 let string = "";
 let buttons = document.querySelectorAll('.button');
+let mute_unmute=document.getElementById("mute");
 const audio = new Audio('../assets/keyPressClick.mp3');
 
 var play=true;
@@ -7,9 +8,11 @@ var count=1;
 document.querySelector("#mute").addEventListener('click',function(){
     if(count%2){
         play=false;
+	    mute_unmute.textContent="🔇"
     }
     else{
        play=true;
+	    mute_unmute.textContent="🔈"
     }
     count++;
 });
