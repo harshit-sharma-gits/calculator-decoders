@@ -67,6 +67,11 @@ input.addEventListener('input', function (e) {
 
 body.addEventListener('keyup',
 	function (e) {
+		const inputValue = input.value;
+		if(e.key == 'Backspace' && inputValue.length > 0){
+			history=history.slice(0, -1);
+			addToHistory('');
+		}
 		if (e.key == "Enter") {
 			 isEqual = true;
 			if(play) {
@@ -76,6 +81,8 @@ body.addEventListener('keyup',
 			input.value = string;
 			addToHistory("="+string + '\n')
 		} else if (e.key == "Delete") {
+			history = '';
+			addToHistory('');
 			if(play) {
 			audio.play();
 			}
@@ -87,11 +94,18 @@ body.addEventListener('keyup',
 			}
 			input.focus();
 			var val = input.value;
-			// history = '';
 			input.value = '';
 			input.value = val;
-			console.log('tesss', e.key,string, regex.test(e.key))
-			if (isEqual) {addToHistory(string); isEqual = false;} else {addToHistory(e.key)}
+
+			if (isEqual && e.key != 'Backspace') {
+				addToHistory(string); 
+				isEqual = false;
+			} else {
+				const reg = /[^0-9\-\+\-\*\%\=]/gi;
+				if(!reg.test(e.key)){
+					addToHistory(e.key);
+				}
+			}
 
 		}
 	if(history == ''){
