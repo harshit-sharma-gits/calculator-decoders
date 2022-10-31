@@ -1,6 +1,7 @@
 let string = "";
 let buttons = document.querySelectorAll('.button');
 let mute_unmute=document.getElementById("mute");
+let backspace=document.getElementById("backspace");
 const audio = new Audio('../assets/keyPressClick.mp3');
 
 var play=true;
@@ -16,6 +17,12 @@ document.querySelector("#mute").addEventListener('click',function(){
     }
     count++;
 });
+backspace.addEventListener('click',function(){
+	string=string.substring(0,string.length-1);
+	input.value=string;
+
+});
+
 
 Array.from(buttons).forEach((button) => {
 	button.addEventListener('click', (e) => {
@@ -29,13 +36,16 @@ Array.from(buttons).forEach((button) => {
 			} catch {
 				string = "Error";
 			}
+			string=string.replace("⌫","");
 			input.value = string;
 		} else if (e.target.innerHTML == 'C') {
 			string = '';
+			string=string.replace("⌫","");
 			input.value = string;
 		} else {
 			string = string + e.target.innerHTML;
 			console.log(string)
+			string=string.replace("⌫","");
 			input.value = string;
 		}
 	});

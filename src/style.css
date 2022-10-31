@@ -85,3 +85,6 @@ transform: scale(1.05);
 .items-center{
   align-items: center;
 }
+#backspace{
+  margin-left: 232px;
+}
