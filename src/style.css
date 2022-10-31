@@ -15,11 +15,20 @@ h1{
   font-size: 2.5rem;
 }
 #mute {
+  font-size: large;
   width: 66px;
   height: 45px;
   margin-left: 90%;
   position:absolute;
+  text-align: center;
   margin-bottom: 40%;
+  background-color: black;
+  border-radius: 30px;
+}
+
+#mute:hover{
+ background-color: #111a20;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .button{
   width: 67px;
@@ -29,9 +38,10 @@ h1{
   background: #617884;
   color: white;
   font-size: 1.5rem;
-  padding: 10px 0 0 0;
+  padding: 1px 0 0 0;
   border: none;
   border-radius: 4px;
+  
 }
 button.red{
   background: #de3c4c;
@@ -40,15 +50,18 @@ button.blue{
   background: #3c8cdb;
 }
 .button:hover{
-  transform: scale(1.02);
-  transition: ease-in-out 0.13s;
+  
+  transition: ease-in-out 0.1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.65rem;
+  color: rgb(218, 217, 193);
 }
 .row{
   margin: 8px 0;
 }
 .row input:hover{
-transform: scale(1.05);
-  transition: ease-in-out 0.13s;
+transform: scale(1.02);
+  transition: ease-in-out 0.2s;
 }
 .rowf{
   margin: 60px;
